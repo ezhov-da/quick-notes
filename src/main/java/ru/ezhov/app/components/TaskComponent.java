@@ -34,8 +34,6 @@ public class TaskComponent extends JPanel {
             g.drawImage(IMAGE_BACKGROUND, 0, 0, null);
         }
     };
-    ;
-
 
     private JToggleButton toggleButtonCloseTask = new JToggleButton(new ActionToggleButtonCloseTask());
     //private JToggleButton buttonEdit = new JToggleButton(new ActionButtonEdit());
