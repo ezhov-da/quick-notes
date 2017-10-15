@@ -55,9 +55,7 @@ public final class Querys {
     public static final String UPDATE_CLOSE
             = "update tasks\n"
             + "    set closenotclose = ?\n"
-            + "where id = ?\n"
-            + "\n"
-            + "";
+            + "where id = ?";
 
     /**
      * удаляем задачу, на самом деле просто ее скрываем

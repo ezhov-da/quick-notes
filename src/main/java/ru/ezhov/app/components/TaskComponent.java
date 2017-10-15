@@ -1,11 +1,11 @@
 package ru.ezhov.app.components;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.GridLayout;
-import java.awt.Image;
+import ru.ezhov.app.connection.TreatmentQuerys;
+import ru.ezhov.app.domain.Task;
+
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -13,24 +13,6 @@ import java.awt.event.MouseEvent;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-import javax.swing.Box;
-import javax.swing.BoxLayout;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JColorChooser;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
-import javax.swing.JScrollPane;
-import javax.swing.JTextPane;
-import javax.swing.JToggleButton;
-import javax.swing.border.Border;
-
-import ru.ezhov.app.domain.Task;
-import ru.ezhov.app.connection.TreatmentQuerys;
 
 /**
  * @author Денис
@@ -49,7 +31,7 @@ public class TaskComponent extends JPanel {
         @Override
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
-            //g.drawImage(IMAGE_BACKGROUND, 0, 0, null);
+            g.drawImage(IMAGE_BACKGROUND, 0, 0, null);
         }
     };
     ;
