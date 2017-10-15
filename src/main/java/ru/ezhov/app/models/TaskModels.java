@@ -1,5 +1,11 @@
 package ru.ezhov.app.models;
 
+import ru.ezhov.app.connection.ConnectionH2DB;
+import ru.ezhov.app.connection.Querys;
+import ru.ezhov.app.domain.Task;
+
+import javax.swing.*;
+import javax.swing.table.AbstractTableModel;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,12 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.AbstractListModel;
-import javax.swing.table.AbstractTableModel;
-
-import ru.ezhov.app.domain.Task;
-import ru.ezhov.app.connection.ConnectionH2DB;
-import ru.ezhov.app.connection.Querys;
 
 /**
  * @author Денис

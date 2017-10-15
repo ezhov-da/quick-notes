@@ -1,21 +1,18 @@
 package ru.ezhov.app.models;
 
-import java.awt.Component;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JTable;
-import javax.swing.table.DefaultTableCellRenderer;
 import ru.ezhov.app.domain.Task;
 
+import javax.swing.*;
+import javax.swing.table.DefaultTableCellRenderer;
+import java.awt.*;
+
 /**
- *
  * @author Денис
  */
 public class TableRenderer extends DefaultTableCellRenderer {
 
-    private final Icon check = new ImageIcon(TableRenderer.class.getResource("/ru/ezhov/tasks/src/check.png"));
-    private final Icon unCheck = new ImageIcon(TableRenderer.class.getResource("/ru/ezhov/tasks/src/uncheck.png"));
+    private final Icon check = new ImageIcon(TableRenderer.class.getResource("/check.png"));
+    private final Icon unCheck = new ImageIcon(TableRenderer.class.getResource("/uncheck.png"));
 
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {

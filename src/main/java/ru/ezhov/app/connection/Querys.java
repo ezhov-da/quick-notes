@@ -1,7 +1,6 @@
 package ru.ezhov.app.connection;
 
 /**
- *
  * @author Денис
  */
 public final class Querys {
@@ -69,18 +68,18 @@ public final class Querys {
             + "where id = ?\n"
             + "\n"
             + "";
-    
+
     public static final String UPDATE_TEXT
             = "update tasks\n"
             + "    set textTask = ?\n"
             + "where id = ?\n"
             + "\n"
-            + "";    
-    
+            + "";
+
     public static final String UPDATE_COLOR
             = "update tasks\n"
             + "    set color = ?\n"
             + "where id = ?\n"
             + "\n"
-            + "";      
+            + "";
 }

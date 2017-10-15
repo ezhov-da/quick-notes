@@ -1,12 +1,10 @@
 package ru.ezhov.app.hook;
 
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import ru.ezhov.app.connection.ConnectionH2DB;
 
+import java.sql.SQLException;
+
 /**
- *
  * @author Денис
  */
 public class HookThread extends Thread {

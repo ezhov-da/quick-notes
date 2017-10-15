@@ -1,16 +1,13 @@
 package ru.ezhov.app;
 
 import com.sun.awt.AWTUtilities;
-
-import java.awt.Dimension;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JFrame;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-
 import ru.ezhov.app.components.BasicFrameMini;
 import ru.ezhov.app.hook.HookThread;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author Денис

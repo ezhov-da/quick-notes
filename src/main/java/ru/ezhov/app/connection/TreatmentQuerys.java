@@ -1,16 +1,11 @@
 package ru.ezhov.app.connection;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Timestamp;
+import java.sql.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- *
  * @author Денис
  */
 public class TreatmentQuerys {

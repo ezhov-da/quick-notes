@@ -2,30 +2,16 @@ package ru.ezhov.app.components;
 
 import com.sun.awt.AWTUtilities;
 import com.toedter.calendar.JDateChooser;
-
-import java.awt.BorderLayout;
-import java.awt.Frame;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JSlider;
-import javax.swing.JCheckBox;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.JTextPane;
-import javax.swing.JToggleButton;
-import javax.swing.JWindow;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-
 import ru.ezhov.app.listeners.ListenerAddTask;
 import ru.ezhov.app.models.TableRenderer;
 import ru.ezhov.app.models.TaskModels;
+
+import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * основное окно для работы
