@@ -41,7 +41,7 @@ public class BasicFrameMini extends JFrame {
 
     private JLabel labelEmptyForDrag =
             new JLabel("<html><font size=\"2\"><b>" +
-                    "заметки v 0.01 [PID: " +
+                    "заметки v 0.02 [PID: " +
                     Kernel32.INSTANCE.GetCurrentProcessId() +
                     "]" +
                     "</b></font>");

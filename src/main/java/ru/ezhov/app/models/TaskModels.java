@@ -29,10 +29,11 @@ public class TaskModels {
     }
 
     public static synchronized void reloadTasks() {
-        try {
-            Connection connection = ConnectionH2DB.INSTANCE.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(Querys.SELECT_TASKS);
-            tasks = new ArrayList<Task>(100);
+        try (
+                Connection connection = ConnectionH2DB.INSTANCE.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(Querys.SELECT_TASKS);
+        ) {
+            tasks = new ArrayList<>(100);
             ResultSet resultSet = preparedStatement.executeQuery();
             Task task;
 
